@@ -1052,11 +1052,25 @@ h2.title {
    gap: 32px;
    overflow: hidden;
    position: relative;
+   @media(max-width: 926px) {
+      width: auto;
+   }
+   @media(max-width: 768px) {
+      height: 100%;
+      padding: 20px;
+   }
 
    .discount__block {
       display: flex;
       justify-content: center;
       align-items: center;
+      @media(max-width: 926px) {
+         padding-top: 30px;
+      }
+      @media(max-width: 768px) {
+        flex-direction: column;
+        padding-top: 0;
+      }
    }
 
    .disount__block_second {
@@ -1072,6 +1086,22 @@ h2.title {
       color: #fff;
       line-height: 130%;
       width: 233px;
+      @media(max-width: 926px) {
+         width: 60%;
+         font-size: 22px;
+         margin-right: 30px;
+      }
+      @media(max-width: 768px) {
+         margin-bottom: 20px;
+         font-size: 18px;
+      }
+      @media(max-width: 576px) {
+         font-size: 13px;
+      }
+      @media(max-width: 425px) {
+         font-size: 20px;
+         text-align: center;
+      }
    }
 
    .discount__list {
@@ -1085,15 +1115,34 @@ h2.title {
       max-width: 628px;
       margin: 0;
       padding: 0;
+      @media(max-width: 926px) {
+         font-size: 12px;
+      }
+      @media(max-width: 768px) {
+         font-size: 10px;
+      }
+      @media(max-width: 576px) {
+         font-size: 8px;
+      }
+      @media(max-width: 425px) {
+         font-size: 8px;
+         flex-direction: column;
+         margin-left: 30px;
+      }
 
       li {
          width: calc(41% - 24px);
-         /* width: auto; */
          margin-left: 15px;
+          @media(max-width: 425px) {
+         width: 100%;
+      }
       }
 
       li:nth-child(2n) {
          width: calc(59% - 24px);
+          @media(max-width: 425px) {
+         width: 100%;
+      }
       }
    }
 
@@ -1104,6 +1153,15 @@ h2.title {
       text-decoration: line-through;
       color: rgba(255, 255, 255, 0.5);
       margin-right: 15px;
+       @media(max-width: 768px) {
+         font-size: 22px;
+      }
+       @media(max-width: 576px) {
+         font-size: 20px;
+      }
+       @media(max-width: 425px) {
+         font-size: 18px;
+      }
    }
 
    .disount__new_cost {
@@ -1112,6 +1170,15 @@ h2.title {
       font-size: 36px;
       color: #fff;
       margin-right: 30px;
+       @media(max-width: 768px) {
+         font-size: 34px;
+      }
+       @media(max-width: 576px) {
+         font-size: 32px;
+      }
+       @media(max-width: 425px) {
+         font-size: 30px;
+      }
    }
 
    .discount__improve {
@@ -1147,5 +1214,16 @@ h2.title {
 
    .discount__percent span {
       padding-top: 18px;
+   }
+   .btn{
+      @media(max-width: 768px) {
+         font-size: 14px;
+      }
+      @media(max-width: 576px) {
+         font-size: 12px;
+      }
+      @media(max-width: 425px) {
+         font-size: 10px;
+      }
    }
 }
